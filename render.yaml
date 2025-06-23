@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kling-token-api
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: ACCESS_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+
